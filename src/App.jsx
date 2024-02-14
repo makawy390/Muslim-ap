@@ -3,27 +3,30 @@ import { lazy } from 'react';
 // const Home = lazy(()=> import ('./components/home/Home'));
 const Azkar = lazy(()=> import ('./components/super-component/azkar/Azkar'));
 const Ezaet = lazy(()=> import ('./components/super-component/ezaet-quran/Ezaet'));
-const Payer = lazy(()=> import ('./components/super-component/payer/Payer'));
+const Main = lazy(()=> import ('./components/super-component/payer/Main'));
 const QuranLive = lazy(()=> import ('./components/super-component/quran/QuranLive'));
 const QuranRead = lazy(()=> import ('./components/super-component/quran-read/QuranRead'));
 const TafserQuran = lazy(()=> import ('./components/super-component/tafser/TafserQuran'));
-
-import {createHashRouter , RouterProvider} from 'react-router-dom'
+const Doaa = lazy(()=> import ('./components/super-component/doaa/Doaa'));
+const Home = lazy(()=> import ('./components/home/Home'));
+import {createBrowserRouter , RouterProvider} from 'react-router-dom'
 import Root from './components/root/Root';
-import Doaa from './components/super-component/doaa/Doaa';
+// import Home from './components/home/Home';
+// import Doaa from './components/super-component/doaa/Doaa';
+// import Main from './components/super-component/payer/Main';
 // import TafserQuran from './components/super-component/tafser/TafserQuran';
 // https://raw.githubusercontent.com/rn0x/Quran-Json/main/Quran.json
 function App() {
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path : '/',
     element : <Root />,
     errorElement :  <h2>Error..........</h2>,
     children : [
-      {index : true , element : <Payer />},
+      {index : true , element : <Home />},
       {
         path : '/payer',
-        element : <Payer />
+        element : <Main />
       },
       {
         path : '/azkar',

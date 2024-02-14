@@ -9,8 +9,9 @@ const Nav = () => {
       const arr = [
         {name : 'الصفحة الرئيسية', url : '/'},
         {name : 'مؤاقيت الصلاة', url : '/payer'},
-        {name : 'اذكار الصباح والمساء', url : '/azkar'},
-        {name : 'دعاء مسلم', url : '/doaa'},
+        // {name : 'اذكار الصباح والمساء', url : '/azkar'},
+        {name : 'اذكار المسلم', url : '/azkar'},
+        // {name : 'دعاء مسلم', url : '/doaa'},
         {name : ' استماع القرآن الكريم ', url : '/listening-quran'},
         {name : ' قراءة القرآن الكريم', url : '/reading-quran'},
         {name : 'اذاعه القرآن الكريم', url : '/ezaet-quran'},

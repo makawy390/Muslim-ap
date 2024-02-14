@@ -1,7 +1,7 @@
 import {useState , useEffect} from 'react'
 import axios from 'axios';
 import {Grid } from '@mui/material'
-import AzakrAfterPayer from './AzakrAfterPayer';
+// import AzakrAfterPayer from './AzakrAfterPayer';
 import './payer.css'
 const Payer = () => {
  const [payer,setPayer] = useState([]);
@@ -69,8 +69,6 @@ console.log(payer);
      </div>
    </Grid>
    </Grid>
-<AzakrAfterPayer />
-
     </div>
   )
 }

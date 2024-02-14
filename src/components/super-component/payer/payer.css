@@ -34,13 +34,16 @@
     font-size: 20px;
     font-weight: 700;
 }
-
-/* .payer .button{
-    background-color: #333;
-    color: #fff;
-    padding: 8px 25px;
-    border-radius: 5px;
-    font-size: 15px;
+.payer .date{
+    font-size: 20px;
+    margin-bottom: 20px;
     font-weight: 700;
-    cursor: pointer;
-} */
+    letter-spacing: .6px;
+    word-spacing: 2px;
+}
+
+.azkar-after-payer p{
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: .6px;
+}

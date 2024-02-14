@@ -5,7 +5,7 @@ import './tafser.css'
 const TafserQuran = () => {
  const [tafser , setTafser] = useState([]);
  const api = 'https://cdn.jsdelivr.net/gh/fawazahmed0/quran-api@1/editions/ara-jalaladdinalmah.json';
-
+// https://quranenc.com/api/v1/translation/sura/arabic_moyassar/114
  useEffect(()=>{
   axios.get(api).then(res => setTafser(res.data.quran)).catch(err => console.log(err))
 },[]);

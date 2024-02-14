@@ -20,12 +20,12 @@ const filtrationAzkar = azkar?.content?.map(({zekr , repeat}, index)=>(
 </Grid>
 ))
   return (
-    <>
+    <div className='azkar-after-payer'>
      <h2>{azkar?.title}</h2>
      <Grid container spacing={2}>
      {filtrationAzkar}
      </Grid>
-    </>
+    </div>
   )
 }
 export default AzakrAfterPayer;
